@@ -128,3 +128,10 @@ STATIC_URL = 'static/'
 STATIC_ROOT = BASE_DIR / 'staticfiles'
 
 
+# CSRF & Security Settings
+CSRF_TRUSTED_ORIGINS = ['https://*.railway.app', 'https://web-production-2e973.up.railway.app']
+CSRF_COOKIE_SECURE = True
+CSRF_COOKIE_HTTPONLY = False
+SESSION_COOKIE_SECURE = True
+SESSION_COOKIE_HTTPONLY = True
+SECURE_SSL_REDIRECT = False  # Set to True if you have SSL
